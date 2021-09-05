@@ -13,14 +13,22 @@
   <script src="https://unpkg.com/blockly-projets@latest/dist/blockly-projets/main-es2015.js" type="module"></script>
   <script src="https://unpkg.com/blockly-projets@latest/dist/blockly-projets/main-es5.js" nomodule defer></script>
   </body>
-<script>
-</script>
+  <script>
+    sessionStorage.setItem('url-backend', 'https://www.power-kube.com');
+    sessionStorage.setItem('dim', JSON.stringify( {
+      width:'90%',
+      height:'300px'
+
+    }))
+
+   
+  </script>
 
   <link rel="stylesheet" href="https://unpkg.com/blockly-projets@latest/dist/blockly-projets/styles.css">
 </head>
 
 <body>
-  <blockly-projet-element url-backend="https://www.power-kube.com" blockly-width="90%" blockly-height='400px'
+  <blockly-projet-element url-backend="{url-backend}" blockly-width="{dim.width}" blockly-height='{dim.height}'
     lecture-seule="true">
   </blockly-projet-element>
   <blockly-projet-element url-backend="https://www.power-kube.com" blockly-width="90%" blockly-height='400px'
